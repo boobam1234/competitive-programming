@@ -1,16 +1,9 @@
 #include <iostream>
-
+ 
 int main() {
-  // 入力
-  int current_rating;
-  int target_rating;
-  std::cin >> current_rating >> target_rating;
+  int current_rating, next_performance;
+  std::cin >> current_rating >> next_performance;
 
-  // 計算
-  int next_performance = target_rating * 2 - current_rating;
-
-  // 出力
-  std::cout << next_performance << std::endl;
-
-  return 0;
+  int next_rating = next_performance * 2 - current_rating;
+  std::cout << next_rating << std::endl;
 }
