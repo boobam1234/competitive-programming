@@ -1,16 +1,10 @@
 #include <iostream>
 
 int main() {
-  // 入力
-  int parking_hour, a_fee, plan2_fee;
-  std::cin >> parking_hour >> a_fee >> plan2_fee;
+  int hour, rate, flat_fee;
+  std::cin >> hour >> rate >> flat_fee;
 
-  // 最小料金
-  int plan1_fee = parking_hour * a_fee;
-  int minimum_fee = (plan1_fee < plan2_fee) ? plan1_fee : plan2_fee;
-
-  // 出力
-  std::cout << minimum_fee << std::endl;
-
-  return 0;
+  int per_hour_fee = rate * hour;
+  int min_parking_fee = per_hour_fee > flat_fee ? flat_fee : per_hour_fee;
+  std::cout << min_parking_fee << std::endl;
 }
