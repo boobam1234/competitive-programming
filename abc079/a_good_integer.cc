@@ -1,17 +1,19 @@
 #include <iostream>
 
 int main() {
-  // 入力
-  std::string n;
+  int n;
   std::cin >> n;
 
-  // 良い整数判定
-  if (n[0] == n[1] && n[1] == n[2] ||
-    n[1] == n[2] && n[2] == n[3]) {
-    std::cout << "Yes" << std::endl;
+  int thousands = n / 1000;
+  int hundreds = n / 100 % 10;
+  int tens = n / 10 % 10;
+  int ones = n % 10;
+  std::string is_good_integer;
+  if (thousands == hundreds && hundreds == tens ||
+    hundreds == tens && tens == ones) {
+    is_good_integer = "Yes";
   } else {
-    std::cout << "No" << std::endl;
+    is_good_integer = "No";
   }
-
-  return 0;
+  std::cout << is_good_integer << std::endl;
 }
