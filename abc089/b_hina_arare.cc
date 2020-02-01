@@ -1,20 +1,17 @@
 #include <iostream>
-#include <vector>
 
 int main() {
-  int hinaarare_num;
-  std::cin >> hinaarare_num;
-  std::vector<std::string> hinaarare_color(200);
-  std::string hinaarare_color_count = "Three";
+  int num;
+  std::cin >> num;
 
-  for (int i = 0; i < hinaarare_num; i++) {
-    std::cin >> hinaarare_color.at(i);
-    if (hinaarare_color.at(i) == "Y") {
-      hinaarare_color_count = "Four";
+  std::string color_count = "Three";
+  for (int i = 0; i < num; i++) {
+    std::string color;
+    std::cin >> color;
+    if (color == "Y") {
+      color_count = "Four";
+      break;
     }
   }
-
-  std::cout << hinaarare_color_count << std::endl;
-
-  return 0;
+  std::cout << color_count << std::endl;
 }
