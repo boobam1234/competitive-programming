@@ -1,1 +1,5 @@
-# competitive-programming
+# Competitive Programming
+
+## License
+
+*   MIT License
