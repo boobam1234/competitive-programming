@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-  int side_length;
-  std::cin >> side_length;
-  std::cout << side_length * side_length * side_length << std::endl;
+  int x;
+  std::cin >> x;
+  std::cout << x * x * x << std::endl;
 }
