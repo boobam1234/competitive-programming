@@ -1,10 +1,9 @@
 #include <iostream>
 
 int main() {
-  int side_length, other_side_length;
-  std::cin >> side_length >> other_side_length;
-
-  int area = side_length * other_side_length;
-  int all_sides_length = side_length * 2 + other_side_length * 2;
-  std::cout << area << " " << all_sides_length << std::endl;
+  int a, b;
+  std::cin >> a >> b;
+  int area = a * b;
+  int length = 2 * (a + b);
+  std::cout << area << " " << length << std::endl;
 }
