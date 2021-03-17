@@ -1,2 +1,2 @@
 x = gets.to_i
-puts x ** 3
+puts x**3
