@@ -1,23 +1,9 @@
 #include <iostream>
+#include <vector>
 
 int main() {
-  int x, y, z;
-  std::cin >> x >> y >> z;
-
-  if (x > y) {
-    int tmp = x;
-    x = y;
-    y = tmp;
-  }
-  if (y > z) {
-   int tmp = y;
-   y = z;
-   z = tmp;
-  }
-  if (x > y) {
-    int tmp = x;
-    x = y;
-    y = tmp;
-  }
-  std::cout << x << " " << y << " " << z << std::endl;
+  std::vector<int> nums(3);
+  for (int i = 0; i < 3; ++i) std::cin >> nums[i];
+  std::sort(nums.begin(), nums.end());
+  std::cout << nums[0] << " " << nums[1] << " " << nums[2] << std::endl;
 }
