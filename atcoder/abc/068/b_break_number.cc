@@ -1,20 +1,24 @@
 #include <iostream>
 
-int main() {
-  int num;
-  std::cin >> num;
+int count_divide_by_two(int num) {
+  int count = 0;
+  while (true) {
+    if (num % 2 == 1) return count;
+    num /= 2;
+    ++count;
+  }
+}
 
-  int max_count = 0;
+int main() {
+  int n;
+  std::cin >> n;
+
   int ans = 1;
-  for (int i = 1; i <= num; ++i) {
-    int count = 0;
-    int a = i;
-    while (a % 2 == 0 && a != 0) {
-      a /= 2;
-      ++count;
-    }
-    if (count > max_count) {
-      max_count = count;
+  int max = 0;
+  for (int i = 1; i <= n; ++i) {
+    int divide_by_two = count_divide_by_two(i);
+    if (divide_by_two > max) {
+      max = divide_by_two;
       ans = i;
     }
   }

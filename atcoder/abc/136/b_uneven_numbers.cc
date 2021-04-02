@@ -1,21 +1,22 @@
 #include <iostream>
 
-int getDigit (int num) {
+int is_odd_digit(int num) {
   int digit = 0;
-  while (num != 0) {
-    num /= 10;
+  while (num) {
     ++digit;
+    num /= 10;
   }
-  return digit;
+  return digit % 2 == 1;
 }
 
 int main() {
-  int num;
-  std::cin >> num;
+  int n;
+  std::cin >> n;
 
-  int count = 0;
-  for (int i = 1; i <= num; ++i) {
-    if (getDigit(i) % 2 == 1) ++count;
+  int odd_digit_count = 0;
+  for (int i = 1; i <= n; ++i) {
+    if (is_odd_digit(i)) ++odd_digit_count;
   }
-  std::cout << count << std::endl;
+
+  std::cout << odd_digit_count << std::endl;
 }
