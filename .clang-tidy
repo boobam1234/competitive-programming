@@ -1,0 +1,6 @@
+Checks:
+  *,
+  -llvmlibc-*,
+  -modernize-use-trailing-return-type,
+CheckOptions:
+  - { key: readability-identifier-length.MinimumVariableNameLength, value: 1 }
