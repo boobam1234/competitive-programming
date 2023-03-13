@@ -1,10 +1,7 @@
 #include <iostream>
 
 int main() {
-  std::cin.tie(nullptr);
-  std::ios_base::sync_with_stdio(false);
-
   int m;
   std::cin >> m;
-  std::cout << 48 - m << "\n";
+  std::cout << 48 - m << '\n';
 }

@@ -1,9 +1,6 @@
 #include <iostream>
 
 int main() {
-  std::cin.tie(nullptr);
-  std::ios_base::sync_with_stdio(false);
-
   int n, l, r;
   std::cin >> n;
   int sum = 0;
@@ -11,5 +8,5 @@ int main() {
     std::cin >> l >> r;
     sum += r - l + 1;
   }
-  std::cout << sum << "\n";
+  std::cout << sum << '\n';
 }

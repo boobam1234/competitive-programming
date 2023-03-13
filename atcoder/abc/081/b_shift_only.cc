@@ -13,9 +13,6 @@ void operate(std::vector<int> &numbers) {
 }
 
 int main() {
-  std::cin.tie(nullptr);
-  std::ios_base::sync_with_stdio(false);
-
   int n;
   std::cin >> n;
   std::vector<int> a(n);
@@ -27,5 +24,5 @@ int main() {
     ++count;
   }
 
-  std::cout << count << "\n";
+  std::cout << count << '\n';
 }

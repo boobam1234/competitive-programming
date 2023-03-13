@@ -8,12 +8,11 @@ bool is_palindrome_num(int num) {
 }
 
 int main() {
-  std::cin.tie(nullptr);
-  std::ios_base::sync_with_stdio(false);
-
   int a, b;
   std::cin >> a >> b;
   int count = 0;
-  for (int i = a; i <= b; ++i) if (is_palindrome_num(i)) ++count;
-  std::cout << count << "\n";
+  for (int i = a; i <= b; ++i) {
+    if (is_palindrome_num(i)) ++count;
+  }
+  std::cout << count << '\n';
 }

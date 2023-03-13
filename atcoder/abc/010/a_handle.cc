@@ -3,5 +3,5 @@
 int main() {
   std::string s;
   std::cin >> s;
-  std::cout << s << "pp" << "\n";
+  std::cout << s << "pp" << '\n';
 }

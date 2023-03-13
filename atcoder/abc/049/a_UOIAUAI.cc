@@ -5,10 +5,7 @@ bool is_vowel(char c) {
 }
 
 int main() {
-  std::cin.tie(nullptr);
-  std::ios_base::sync_with_stdio(false);
-
   char c;
   std::cin >> c;
-  std::cout << (is_vowel(c) ? "vowel" : "consonant") << "\n";
+  std::cout << (is_vowel(c) ? "vowel" : "consonant") << '\n';
 }
