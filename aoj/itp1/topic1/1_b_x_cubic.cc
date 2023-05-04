@@ -1,7 +1,9 @@
+#include <cmath>
 #include <iostream>
 
 int main() {
   int x;
   std::cin >> x;
-  std::cout << x * x * x << std::endl;
+  int ans = std::pow(x, 3);
+  std::cout << ans << '\n';
 }
